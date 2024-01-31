@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhyaz Careers</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <header>
+        <h1>Abhyaz Job Openings</h1>
+    </header>
+    <section class="job-listings">
+        <article class="job">
+            <h2>Software Developer Intern</h2>
+	    <p>Required Skills: Python, Java</p>
+            <p>Location: Bengaluru </p>
+	    <p>Salary: 4.2 Lakhs</p>
+            <p>Experience: 0 to 1+ years</p>
+            <button>Apply Now</button>
+        </article>
+
+	<article class="job">
+            <h2>Web Doveloper</h2>
+	    <p>Required Skills: HTML, CSS and JavaScript etc..</p>
+            <p>Location: Remote</p>
+	    <p>Salary: 4 to 6 Lakhs</p>
+            <p>Experience: 2+ years</p>
+            <button>Apply Now</button>
+        </article>
+
+	<article class="job">
+            <h2>Python Developer</h2>
+	    <p>Required Skills: Python, Django, MySql</p>
+            <p>Location: Hyderabad</p>
+	    <p>Salary: 5 to 7 Lakhs</p>
+            <p>Experience: 3+ years</p>
+            <button>Apply Now</button>
+        </article>
+
+
+        <article class="job">
+            <h2>Java Developer</h2>
+	    <p>Required Skills: Java, Spring, HyberNate</p>
+            <p>Location: Chennai</p>
+	    <p>Salary: 300000 </p>
+            <p>Experience: 0 years</p>
+            <button>Apply Now</button>
+        </article>
+
+	<article class="job">
+            <h2>Product Manager</h2>
+	    <p>Required Skills: Power BI, Communication Skills</p>
+            <p>Location: Remote</p>
+	    <p>Salary: 10 LPA</p>
+            <p>Experience: 5+ years</p>
+            <button>Apply Now</button>
+        </article>
+
+        <!-- Add more job listings here -->
+    </section>
+    <footer>
+        <p>© 2024 Abhyaz. All rights reserved.</p>
+    </footer>
+  <article class="job">
+    <!-- Existing job details ... -->
+    <button onclick="openForm()">Apply Now</button>
+</article>
+
+<!-- Add more job listings here -->
+
+<!-- Registration Form Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <form id="registrationForm">
+            <h2>Job Application</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Cover Letter"></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openForm() {
+        document.getElementById("registerModal").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("registerModal").style.display = "none";
+    }
+</script>
+
+
+
+
+</body>
+</html>
